@@ -30,11 +30,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-1. Describe component state.
+User interfaces today are complicated and working with the DOM can be challenging. React created the virtual DOM to make it easier to deal with manipulating the DOM. React, reacts to changes in state and updates the DOM on its own. It is a user interface component library.
 
-1. Describe props.
+2. Describe component state.
 
-1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+State is the current state of the data. If something changes the state updates.
+
+3. Describe props.
+
+Props are how we pass the state data of one component to another. Props are read only.
+
+4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+Side effects are anything that affects somethign outside scope of function being executed. A side effect is something that causes a component to return a different output for the same state and props.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
