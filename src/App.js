@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from 'axios'
 import Character from './components/Character'
+import styled from 'styled-components'
 
 const App = () => {
 
@@ -26,14 +27,30 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
-      <div>
+      <Headline>STAR WARS CHARACTERS</Headline>
+      <CharactersBox>
             {characters.map((character) => {
-                return <Character key={character.name} name={character.name} height={character.height} mass={character.mass} />
+                return <Character key={character.name} name={character.name} height={character.height} mass={character.mass} born={character.birth_year
+                } />
             })}
-            </div>
+            </CharactersBox>
     </div>
   );
 }
+
+const CharactersBox = styled.div`
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    justify-content: center;
+`
+
+const Headline = styled.h1`
+font-size: 4.5rem;
+font-family: 'Poller One';
+text-transform: uppercase;
+padding: 2rem;
+color: #fff
+`
+
 
 export default App;
