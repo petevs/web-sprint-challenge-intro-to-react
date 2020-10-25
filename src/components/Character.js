@@ -37,9 +37,4 @@ font-family: 'Poller One';
 text-transform: uppercase;
 `
 
-const Button = styled.a`
-font-size: 1rem;
-text-transform: uppercase;
-`
-
 export default Character;
