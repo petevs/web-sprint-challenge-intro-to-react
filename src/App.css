@@ -13,6 +13,7 @@ html {
 .App {
   text-align: center;
   padding: 2rem;
+  min-height: 100vh;
 }
 .Header {
   color: #443e3e;
